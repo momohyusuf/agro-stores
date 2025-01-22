@@ -9,7 +9,12 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: ["http://localhost:5173/", "http://localhost:5173"],
+    origin: [
+      "http://localhost:5173/",
+      "http://localhost:5173",
+      "https://agro-stores-two.vercel.app/",
+      "https://agro-stores-two.vercel.app",
+    ],
   })
 );
 app.use(express.json());
